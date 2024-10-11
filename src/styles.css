@@ -1,0 +1,77 @@
+/* src/styles.css */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+}
+
+.hangman-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.word-display {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.letter {
+  margin: 0 0.5rem;
+}
+
+.letter.correct {
+  color: green; /* Color for correct guesses */
+}
+
+.letter.incorrect {
+  color: red; /* Color for incorrect guesses */
+}
+
+.letter.guessed {
+  color: #007bff; /* Color for guessed letters (blue-400) */
+}
+
+.letter-buttons {
+  margin: 20px 0;
+}
+
+.letter-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #7d7df9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.letter-buttons button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.game-over {
+  margin-top: 20px;
+}
+
+/* New CSS for hint */
+.hint-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  color: #411429;
+  font-style: normal;
+}
